@@ -7,45 +7,61 @@
 </head>
 <body>
     <form action="https://formspree.io/myynbbvd" method="POST">
-        <label for="fname">Імя</label><br>
-        <input type="text" id="fname" name="name" required><br>
-        <label for="lname">Прізвище</label><br>
-        <input type="text" id="lname" name="name" required><br>
-        <p>Виберіть Вашу стать</p>
-        <input type="radio" id ="male" name="gender" value="male">
-        <label for="male">Чоловіча</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Жіноча</label><br>
-        <input type="radio" id="dont_matter" name="gender" value="dont matter" checked>
-        <label for="dont_matter">Не важливо</label><br>
-        <p>Які речі для вас найважливіші в житті?</p>
-        <input type="checkbox" id="career" name="important_things" value="career">
-        <label for="career">Кар'єра</label><br>
-        <input type="checkbox" id="family" name="important_things" value="family">
-        <label for="family">Сім'я</label><br>
-        <input type="checkbox" id="health" name="important_things" value="health">
-        <label for="health">Здоров'я</label><br>
-        <input type="checkbox" id="nothing" name="important_things" value="nothing" checked>
-        <label for="nothing">Нічого</label><br>
-        <p>Якими мовами ви володієте?</p>
-        <select name="language"  size="5" multiple>
-            <option disabled>Оберіть відповідь</option>
-            <option value="ukranian">Українська</option>
-            <option value="russian">Російська</option>
-            <option value="english">Англійська</option>
-            <option value="others">інші</option>
-        </select>
-        <p>Чи хотіли б ви жити за кордоном</p>
-        <select name="lifeplace">
-            <option disabled selected>Оберіть відповідь</option>
-            <option value="yes">Так</option>
-            <option value="no">Ні</option>
-            <option value="dont_know">Ще не визначився</option>
-        </select><br><br>
+        <fieldset>
+            <legend>Познайомимось</legend>
+            <label for="fname">Імя</label><br>
+            <input type="text" id="fname" name="name" required><br>
+
+            <label for="lname">Прізвище</label><br>
+            <input type="text" id="lname" name="name" required><br>
+        </fieldset>
+        <fieldset>
+            <p>Виберіть Вашу стать</p>
+            <input type="radio" id ="male" name="gender" value="male">
+            <label for="male">Чоловіча</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жіноча</label><br>
+
+            <input type="radio" id="dont_matter" name="gender" value="dont matter" checked>
+            <label for="dont_matter">Не важливо</label><br>
+
+            <p>Які речі для вас найважливіші в житті?</p>
+            <input type="checkbox" id="career" name="important_things" value="career">
+            <label for="career">Кар'єра</label><br>
+
+            <input type="checkbox" id="family" name="important_things" value="family">
+            <label for="family">Сім'я</label><br>
+
+            <input type="checkbox" id="health" name="important_things" value="health">
+            <label for="health">Здоров'я</label><br>
+
+            <input type="checkbox" id="nothing" name="important_things" value="nothing" checked>
+            <label for="nothing">Нічого</label><br>
+        </fieldset>
+        <fieldset>
+            <p>Якими мовами ви володієте?</p>
+            <select name="language"  size="5" multiple>
+                <option disabled>Оберіть відповідь</option>
+                <option value="ukranian">Українська</option>
+                <option value="russian">Російська</option>
+                <option value="english">Англійська</option>
+                <option value="others">інші</option>
+            </select>
+            <p>Чи хотіли б ви жити за кордоном</p>
+            <select name="lifeplace">
+                <option disabled selected>Оберіть відповідь</option>
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+                <option value="dont_know">Ще не визначився</option>
+            </select><br><br>
+        </fieldset>
         <label for="wishes">Напишіть свої бажання, цілі і мрії на майбутнє</label><br>
         <textarea id="wishes" name="wish" rows="5" placeholder="чого ви прагнете? Пишіть, не соромтесь"></textarea><br><br>
+
         <label for="photo">Завантажте ваші фотографії</label>
         <input type="file" id="photo" name="photo" multiple required><br><br>
+        
         <button type="submit">Відправити нам</button>
     </form>
     <nav>
